@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>Sevici</title>
+	<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
+	<!-- load theme file for your application -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="ui-page ui-page-active" id="main">
+		<header class="ui-header">
+			<h2 class="ui-title">Sevici Sevilla</h2>
+		</header>
+		<div class="ui-content">
+		    <div class="loader">Cargando...</div>
+		    <div class="error-message">
+		    	<p style="color: black; font-size: medium;">
+		    		No es posible obtener los resultados.  <br>
+		    		Porfavor asegurese de que tiene conexion a internet y pruebe otra vez.
+		    	</p>
+		    </div>
+			<ul class="ui-listview">
+			</ul>
+		</div>
+	</div>
+	
+	<div id="popup" class="ui-popup">
+	   <div class="ui-popup-header" style="color: #FF5252; 
+	        background-color: white;font-size: x-large;"></div>
+	   <div class="ui-popup-content" 
+	        style="background-color: 
+	        white;color: #CACACA; 
+	        font-size: medium;">
+	   		<img src="./img/ic_address.png"/><span id="popup-address"></span><br>
+	   		<img src="./img/ic_status.png"/><span id="popup-status"></span><br>
+	   		<img src="./img/ic_ok.png"/><span id="popup-bikes"></span><br>
+	   		<img src="./img/ic_slot.png"/><span id="popup-slots"></span><br>
+	   </div>
+	   <div class="ui-popup-footer">
+	      <button id="popup-ok" class="ui-btn" style="background-color: #FF5252;color: white;">Ok</button>
+	   </div>
+	</div>
+	
+	<script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+	<script type="text/javascript" src="js/circle-helper.js"></script>
+	
+	<script type="text/javascript" src="dependencies/jquery.js"></script>
+	<script src="js/repository.js"></script>
+	<script src="js/utils.js"></script>
+	
+	<script src="lowBatteryCheck.js"></script>
+</body>
+</html>
