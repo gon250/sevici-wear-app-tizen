@@ -1,0 +1,1 @@
+# sevici-wear-app-tizen
